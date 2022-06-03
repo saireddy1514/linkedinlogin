@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Linkedin</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <style>
+    .linkedin {
+      background-color: #0073b1 !important;
+      color: #fff !important;
+    }
+    .fa-linkedin-f:before,
+    .fa-linkedin:before {
+      content: "\f0e1";
+    }
+    .brand-logo{
+      margin-left: 5px;
+    }
+    .card{
+      width: 50%;
+        padding: 12px 15px;
+    }
+    input[type='email'],input[type='password']{
+      width: 50%;
+      padding: 2px 3px;
+    }
+    form p{
+      font-size: 1rem;
+      margin-bottom: 0px;
+    }
+    form{
+      margin: 10px 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+    }
+    .container-fluid{
+      display: flex;
+      justify-content: center;
+    }
+    input[type='submit']{
+      padding: 10px 14px;
+      background-color: purple;
+      color: white;
+      border:none;
+      border-radius: 10%;
+    }
+    .navbar{
+      background-color: purple;
+    }
+    .navbar-brand{
+      font-size: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">HoloWorld</a>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="card">
+    <p style="text-align:center;font-size:1.5rem;text-decoration:underline">
+      <i>Login Page</i>
+    </p>
+    <form method="post">
+        <input type="email" name="umail" placeholder="Enter Email"/>
+        <input type="password" name="pswd" placeholder="Enter Password"/>
+        <br>
+        <input type="submit" name="" value="Sign In">
+    </form>
+    <p style="text-align:center">
+      Or
+    </p>
+    <div>
+      <div style="display: flex; justify-content: center;margin-bottom:15px;">
+        <a href="/auth/linkedin" class="btn social linkedin">
+        <i class="fa fa-linkedin"></i> Sign in with Linkedin
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
